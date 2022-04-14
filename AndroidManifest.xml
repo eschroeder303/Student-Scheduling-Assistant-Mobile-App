@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.C868.Capstone">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/title_mssaApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MobileStudentSchedulingAssistant">
+        <activity
+            android:name="android.C868.Capstone.All.GUI.report"
+            android:exported="false"
+            android:label="@string/title_created_date_report"/>
+
+        <receiver
+            android:name="android.C868.Capstone.All.GUI.MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="android.C868.Capstone.All.GUI.courseDetail"
+            android:exported="true"
+            android:label="@string/title_courseDetail" />
+        <activity
+            android:name="android.C868.Capstone.All.GUI.assessmentDetail"
+            android:exported="true"
+            android:label="@string/title_assessmentDetail" />
+        <activity
+            android:name="android.C868.Capstone.All.View.addAssessmentView"
+            android:exported="true"
+            android:label="@string/title_addAssessment" />
+        <activity
+            android:name="android.C868.Capstone.All.View.addCourseView"
+            android:exported="true"
+            android:label="@string/title_addCourse" />
+        <activity
+            android:name="android.C868.Capstone.All.View.addTermView"
+            android:exported="true"
+            android:label="@string/title_addTerm" />
+        <activity
+            android:name="android.C868.Capstone.All.GUI.termDetail"
+            android:exported="true"
+            android:label="@string/title_termDetail" />
+        <activity
+            android:name="android.C868.Capstone.All.GUI.termList"
+            android:exported="true"
+            android:label="@string/title_termList" />
+        <activity
+            android:name="android.C868.Capstone.All.GUI.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
